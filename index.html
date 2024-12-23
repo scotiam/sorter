@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jua&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <title>Sorter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <h1>Word Sorter</h1>
+    <div>
+      <label for="user-input">Enter words (comma separated):</label>
+      <input type="text" id="user-input" placeholder="Enter words here" />
+      <button class="button-2" onclick="startWithUserWords()">Start Ranking</button>
+    </div>
+    <p>Select your preference from the options below. Click Start Over to restart.</p>
+    <div id="word-pair"></div>
+    <br>
+    <div id="flexButtons">
+      <button id="startOverButton" class="button-1" onclick="startOver()">Start Over</button>
+    </div>
+    <p>Progress:</p>
+    <div id="progress-bar-container">
+      <div class="progress-bar">
+        <div id="progress" class="progress"></div>
+      </div>
+    </div>
+    <div id="flexCopy">
+      <button id="copyButton" class="button-1" onclick="copyToClipboard()" style="display: none;">Copy Ranking</button>
+      <div id="copyMessage" style="display: none;">Copied!</div>
+    </div>
+    <div id="ranking"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+body {
+    background-color: #fef6e4;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .container {
+    width: 400px;
+    margin: 0 auto;
+  }
+  #word-pair {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  li::marker {
+    content: '';
+    font-size: 1.2em;
+  }
+
+  .aa {
+    background-color: #ba6384;
+    color: #fef0f5;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-right: 20px;
+    min-width: 100px; /* Ensure a minimum width */
+    padding: 10px 20px; /* Add padding for longer phrases */
+    height: auto; /* Allow height to adjust dynamically */
+    transition: 0.3s;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    white-space: normal; /* Allow text to wrap */
+    word-wrap: break-word; /* Break long words if needed */
+    text-align: center; /* Center-align the text */
+}
+
+  .aa:hover {
+    background-color: #f582ae;
+    box-shadow: 0 0 0 5px #f9bad2;
+    color: #001858;
+  }
+
+.button-1 {
+  background-color: #6fa9b1;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #1b292b;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin-right: 20px;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #8bd3dd;
+}
+
+.button-2 {
+  background-color: #6fa9b1;
+  border-radius: 8px;
+  border-style: none;
+  color: #1b292b;
+  cursor: pointer;
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 30px;
+  line-height: 20px;
+  list-style: none;
+  margin-right: 20px;
+  outline: none;
+  padding: 5px 5px 5px 5px;
+  /* position: relative; */
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: middle;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-2:hover,
+.button-2:focus {
+  background-color: #8bd3dd;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #f3d2c1;
+    border-style: solid;
+    border-radius: 7px;
+    border-width: 2px;
+    border-color: #001858;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .progress {
+    width: 0%; 
+    height: 100%;
+    background-color: #f582ae; 
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out; 
+  }
+
+#flexButtons, #flexCopy {
+  display: flex;
+}
+
+#flexCopy {
+  align-items: center;
+}
+
+/* General container adjustments for smaller screens */
+@media (max-width: 768px) {
+  .container {
+      width: 100%; /* Make the container take full width */
+      padding: 10px; /* Add some padding for better layout */
+  }
+
+  #word-pair {
+      flex-direction: column; /* Stack the buttons vertically */
+      align-items: stretch; /* Make buttons fill the container width */
+  }
+
+  .aa, .button-1, .button-2 {
+      width: 100%; /* Full-width buttons */
+      margin: 10px 0; /* Add space between stacked buttons */
+      height: auto; /* Let the height adjust naturally */
+      font-size: 16px; /* Slightly smaller font for mobile */
+      padding: 12px; /* Increase padding for touch-friendliness */
+  }
+
+  #progress {
+      height: 10px; /* Make the progress bar thinner for mobile */
+  }
+
+  .progress-bar {
+    height: 10px; /* Ensure the height is consistent */
+    border-width: 1px; /* Reduce border width for smaller screens */
+}
+
+.progress {
+    height: 100%; /* Ensure it fills the parent vertically */
+}
+}
